@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
         ,glue={"stepDefinition"},
         plugin ={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","pretty"}
         ,monochrome = true
+        //,publish = true
 
         //,dryRun = true
 )public class testRunner {}
