@@ -16,6 +16,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <aspectj.version>1.8.11</aspectj.version>
+    <slf4j.version>1.7.21</slf4j.version>
   </properties>
 
   <dependencies>
@@ -25,16 +27,75 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>6.10.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>6.10.4</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-core</artifactId>
+      <version>6.10.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+    <dependency>
+      <groupId>info.cukes</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>1.2.5</version>
+      <scope>test</scope>
+    </dependency>
+
+
+
+    <!-- These are the Spark Reporting dependencies -->
+    <!--Logger -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-picocontainer</artifactId>
+      <version>6.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extentreports-cucumber6-adapter</artifactId>
+      <version>2.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.4</version>
+    </dependency>
   </dependencies>
 
+
+
+
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
+
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
@@ -69,7 +130,26 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M5</version>
+
+          <configuration>
+            <includes>
+              <include>**/**/testRunner.java</include>
+            </includes>
+
+
+          </configuration>
+        </plugin>
       </plugins>
-    </pluginManagement>
+
+
   </build>
 </project>
