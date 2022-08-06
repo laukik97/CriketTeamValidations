@@ -28,9 +28,11 @@ public class stepDefinition {
     public void the_RCB_team_member_details_is_present() {
         // Below is the code to validate the team name
         try {
+
              jsonObject=js.getParserObject();
-            String teamName=(String)jsonObject.get("name");
-            Assert.assertEquals("Royal Challengers Bangalore",teamName);
+             String teamName=(String)jsonObject.get("name");
+             Assert.assertEquals("Royal Challengers Bangalore",teamName);
+
         } catch (IOException e) {
             fail("Test Case Failure Reason: "+e.getMessage());
             e.printStackTrace();
@@ -46,6 +48,7 @@ public class stepDefinition {
         // Write code here that turns the phrase above into concrete actions
         //team should have at least 11 players
         try {
+
             jsonObject=js.getParserObject();
             playerArray= (JSONArray) jsonObject.get("player"); //get te json array size and it should be >=11
             Assert.assertTrue(playerArray.size()>=11);
@@ -66,28 +69,28 @@ public class stepDefinition {
         // Write code here that turns the phrase above into concrete actions
         int fPlayerCount=0;
         try {
+
             jsonObject=js.getParserObject();
             playerArray= (JSONArray) jsonObject.get("player");
+
             for(int i=0;i<playerArray.size();i++){
                 JSONObject jsonArrayobject= (JSONObject) playerArray.get(i);
                 //System.out.println("player name and Country is"+jsonArrayobject.get("name")+" "+jsonArrayobject.get("country"));
                 hmap.put((String) jsonArrayobject.get("name"), (String) jsonArrayobject.get("country"));
             }
+
             Iterator<Map.Entry<String, String>> itr = hmap.entrySet().iterator();
 
             while(itr.hasNext())
             {
                 Map.Entry<String, String> entry = itr.next();
                 //System.out.println("Key = " + entry.getKey() +", Value = " + entry.getValue());
-                if(!entry.getValue().equals("India")){
+                if(!entry.getValue().equalsIgnoreCase("India")){
                     fPlayerCount++;
                 }
             }
-
             //System.out.println("Player count : "+fPlayerCount);
             Assert.assertTrue(fPlayerCount==4);
-
-
 
         } catch (IOException e) {
             fail("Test Case Failure Reason: "+e.getMessage());
@@ -99,4 +102,39 @@ public class stepDefinition {
         }
     }
 
+    @Then("Team should have at least one wicketkeeper")
+    public void teamShouldHaveAtLeastOneWicketkeeper() {
+        int wicketKeeperCount=0;
+        try {
+
+            jsonObject=js.getParserObject();
+            playerArray= (JSONArray) jsonObject.get("player");
+            for(int i=0;i<playerArray.size();i++){
+                JSONObject jsonArrayobject= (JSONObject) playerArray.get(i);
+                //System.out.println("player name and Country is"+jsonArrayobject.get("name")+" "+jsonArrayobject.get("country"));
+                hmap.put((String) jsonArrayobject.get("name"), (String) jsonArrayobject.get("role"));
+            }
+            Iterator<Map.Entry<String, String>> itr = hmap.entrySet().iterator();
+
+            while(itr.hasNext())
+            {
+                Map.Entry<String, String> entry = itr.next();
+                //System.out.println("Key = " + entry.getKey() +", Value = " + entry.getValue());
+                if(entry.getValue().equalsIgnoreCase("wicket-keeper")){
+                    wicketKeeperCount++;
+                }
+            }
+            //System.out.println("Wicketkeeper count : "+wicketKeeperCount);
+            Assert.assertTrue(wicketKeeperCount>=1);
+
+        } catch (IOException e) {
+            fail("Test Case Failure Reason: "+e.getMessage());
+            e.printStackTrace();
+
+        } catch (ParseException e) {
+            fail("Test Case Failure Reason: "+e.getMessage());
+            e.printStackTrace();
+        }
+
+    }
 }
