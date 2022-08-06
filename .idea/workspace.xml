@@ -7,9 +7,6 @@
     <list default="true" id="85d86996-9e84-464c-bdbb-498991f43549" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/stepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/stepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/testRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/testRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/FeatureFiles/RCBValidations.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FeatureFiles/RCBValidations.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
