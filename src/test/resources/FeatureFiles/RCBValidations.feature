@@ -1,6 +1,7 @@
 Feature: RCB Team Validations
 
+@TestCase1
   Scenario: Validating foreign players count
-    Given All the team member's details is present
+    Given The RCB team member details is present
     When Performing the count validations
     Then Team should have only four foreign players

@@ -1,12 +1,17 @@
 package testRunner;
 
-import cucumber.api.CucumberOptions;
+import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 
+//import cucumber.api.CucumberOptions;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "./src/test/java/resources/FeatureFiles/*"
-        ,glue={"stepDefinition"}
-)public class testRunner {
-}
+        features = {"classpath:FeatureFiles/RCBValidations.feature"}
+        ,glue={"stepDefinition"},
+        plugin ={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","pretty"}
+        ,monochrome = true
+
+        //,dryRun = true
+)public class testRunner {}
