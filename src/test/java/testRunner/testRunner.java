@@ -8,9 +8,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"classpath:FeatureFiles/RCBValidations.feature"}
+        features = {"classpath:FeatureFiles/"}
         ,glue={"stepDefinition"},
-        plugin ={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","pretty"}
+        plugin ={"html:target/CucumberReports/cucumber-html-report.html","json:target/CucumberReports/cucumber-json-report.json",
+                "junit:target/CucumberReports/cucumber-xml-report.xml"
+                ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","pretty"}
         ,monochrome = true
         ,tags=""
         //,publish = true
