@@ -54,3 +54,8 @@ Some Additional Details:
         Reports will be generated in "test-output/SparkReport/Spark.html"
         Apart from extent report cucumber reports are also integrated
         at 'target/CucumberReports' (three types of reports will be generate html,json and xml) 
+
+Name - Laukik Parashurami
+
+Email - parashruami.laukik@gmail.com
+
