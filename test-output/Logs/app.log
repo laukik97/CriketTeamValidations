@@ -112,3 +112,33 @@
 138  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
 140  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
 142  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
+115  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+137  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+139  [main] INFO  stepDefinition.stepDefinition - Validating The Foreign Players Count in the Teams
+154  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+156  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+157  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
+147  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+165  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+166  [main] INFO  stepDefinition.stepDefinition - Validating The Foreign Players Count in the Teams
+181  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+182  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+184  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
+95   [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+113  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+115  [main] INFO  stepDefinition.stepDefinition - Validating The Foreign Players Count in the Teams
+127  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+128  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+130  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
+161  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+178  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+180  [main] INFO  stepDefinition.stepDefinition - Validating The Foreign Players Count in the Teams
+197  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+198  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+200  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
+113  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+132  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+134  [main] INFO  stepDefinition.stepDefinition - Validating The Foreign Players Count in the Teams
+146  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+148  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+149  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams

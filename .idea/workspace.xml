@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85d86996-9e84-464c-bdbb-498991f43549" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
     </list>
@@ -55,7 +55,7 @@
       <recent name="C:\Users\paras\IdeaProjects\cricketteamvalidations\src\test\resources\TestData" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testRunner">
+  <component name="RunManager" selected="JUnit.All in CricketTeamValidations">
     <configuration name="Feature: RCBValidations" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/FeatureFiles/RCBValidations.feature" />
@@ -74,6 +74,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in CricketTeamValidations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CricketTeamValidations" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CricketTeamValidations" />
       <extension name="coverage">
@@ -84,6 +92,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testRunner" />
       <option name="MAIN_CLASS_NAME" value="testRunner.testRunner" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,8 +109,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CricketTeamValidations [test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Feature: RCBValidations" />
+      <item itemvalue="JUnit.All in CricketTeamValidations" />
+      <item itemvalue="JUnit.testRunner" />
+      <item itemvalue="Maven.CricketTeamValidations [test]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in CricketTeamValidations" />
         <item itemvalue="JUnit.testRunner" />
         <item itemvalue="Cucumber Java.Feature: RCBValidations" />
       </list>
