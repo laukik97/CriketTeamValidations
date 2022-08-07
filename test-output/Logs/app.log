@@ -100,3 +100,15 @@
 145  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
 146  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
 147  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
+145  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+162  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+164  [main] INFO  stepDefinition.stepDefinition - Validating The Foreign Players Count in the Teams
+178  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+180  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+182  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
+101  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+120  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+122  [main] INFO  stepDefinition.stepDefinition - Validating The Foreign Players Count in the Teams
+138  [main] INFO  stepDefinition.stepDefinition - Validating the Team Name
+140  [main] INFO  stepDefinition.stepDefinition - Validating The Player Count in the Teams
+142  [main] INFO  stepDefinition.stepDefinition - Validating The Wicket-Keeper Count in the Teams
