@@ -1,6 +1,8 @@
 Clone the Repository:
 
-Git Repo - https://Laukik502@bitbucket.org/myrepo2/cricketteamvalidations.git
+Github URL- https://github.com/laukik97/CriketTeamValidations
+
+Bitbucket Repo - https://Laukik502@bitbucket.org/myrepo2/cricketteamvalidations.git
 
 Repo URL - https://bitbucket.org/myrepo2/cricketteamvalidations/src/master/
 
